@@ -15,9 +15,23 @@ public class MayDate {
             "Пятниця",
             "Субота",
         };
+    String[] monts = {
+            "Січень",
+            "Лютий",
+            "Березень",
+            "Квітень",
+            "Травень",
+            "Червень",
+            "Липень",
+            "Серпень",
+            "Вересень",
+            "Жовтень",
+            "Листопад",
+            "Грудень",
+    };
         String strMin = min < 10 ? "0" + min : "" + min ;
         String strHour = hour < 10 ? "0" + hour: "" + hour;
-        String message = "Cьогодні " + wiks[weekDay] + " " + hour + ":"+strMin;
+        String message = "Cьогодні " + wiks[weekDay] + " " + strHour + ":"+strMin + "\nМісяць\t"+ monts[mont];
 
         public String getMessage(){
             return message;
