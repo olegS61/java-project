@@ -1,3 +1,5 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -5,7 +7,7 @@ import java.util.GregorianCalendar;
 public class Main {
 
     public static void main(String[] args) {
-       // System.out.println(new Date());
+        System.out.println(new Date());
         Calendar calendar = Calendar.getInstance();
         int mont = calendar.get(Calendar.MONTH);
         int hour = calendar.get(Calendar.HOUR);
@@ -16,5 +18,8 @@ public class Main {
         box.height = 10.2;
         box.width = 11.3;
         System.out.println(box.getVolume());
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss MM/dd/yyyy");
+        LocalDateTime tim = LocalDateTime.now();
+        System.out.println(tim.format(formatter));
     }
 }
