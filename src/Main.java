@@ -12,7 +12,8 @@ public class Main {
         Calendar calendar = Calendar.getInstance();
         int weekDay = calendar.get(Calendar.DAY_OF_WEEK)-1;
         int mont = calendar.get(Calendar.MONTH);
-        int hour = calendar.get(Calendar.HOUR);
+        int hour = calendar.get(Calendar.HOUR_OF_DAY);
+        int min = calendar.get(Calendar.MINUTE);
         System.out.println(mont + "  " + hour);
         Box box = new Box();
         box.length = 15;
@@ -34,7 +35,12 @@ public class Main {
                 "Пятниця",
                 "Субота",
         };
-
-        System.out.println("Cьогодні " + wiks[weekDay]);
+        String strMin = "";
+        String strHour = "";
+        if (min <10){
+            strMin = 0 +""+min;
+        }else strMin += min;
+        String message = "Cьогодні " + wiks[weekDay] + " " + hour + ":"+strMin;
+        System.out.println(message);
     }
 }
