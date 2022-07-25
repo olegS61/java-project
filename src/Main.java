@@ -10,6 +10,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(new Date());
         Calendar calendar = Calendar.getInstance();
+        int weekDay = calendar.get(Calendar.DAY_OF_WEEK)-1;
         int mont = calendar.get(Calendar.MONTH);
         int hour = calendar.get(Calendar.HOUR);
         System.out.println(mont + "  " + hour);
@@ -25,14 +26,15 @@ public class Main {
 
 
         String[] wiks = {
+                "Неділя",
                 "Понеділок",
                 "Вівторок",
                 "Середа",
                 "Четвер",
                 "Пятниця",
                 "Субота",
-                "Неділя",
         };
 
+        System.out.println("Cьогодні " + wiks[weekDay]);
     }
 }
