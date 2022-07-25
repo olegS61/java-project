@@ -22,5 +22,17 @@ public class Main {
         LocalDateTime tim = LocalDateTime.now();
         System.out.println(tim.format(formatter));
         System.out.println(false || true && true && false);
+
+
+        String[] wiks = {
+                "Понеділок",
+                "Вівторок",
+                "Середа",
+                "Четвер",
+                "Пятниця",
+                "Субота",
+                "Неділя",
+        };
+
     }
 }
