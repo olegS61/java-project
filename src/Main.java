@@ -11,5 +11,10 @@ public class Main {
         int hour = calendar.get(Calendar.HOUR);
         System.out.println(mont + "  " +hour);
 //        int mont = date.getMonth();
+        Box box = new Box();
+        box.length = 15;
+        box.height = 10.2;
+        box.width = 11.3;
+        System.out.println(box.getVolume());
     }
 }
