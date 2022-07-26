@@ -13,33 +13,10 @@ public class Main {
         box.width = 11.3;
         System.out.println(box.getVolume());
         //-----------------------------------------------
-//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss MM/dd/yyyy");
-//        LocalDateTime tim = LocalDateTime.now();
-       // System.out.println(tim.format(formatter));
-//        System.out.println(false || true && true && false);
 
         MayDate dat = new MayDate();
 
         System.out.println(dat.getMessage());
-        System.out.println(new Random().nextInt(100));
-        System.out.println(new Random().nextInt(1,5));
-        System.out.println(dat.getClass());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }
