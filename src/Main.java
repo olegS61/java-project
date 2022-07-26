@@ -1,9 +1,6 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
@@ -22,7 +19,27 @@ public class Main {
 //        System.out.println(false || true && true && false);
 
         MayDate dat = new MayDate();
+
         System.out.println(dat.getMessage());
+        System.out.println(new Random().nextInt(100));
+        System.out.println(new Random().nextInt(1,5));
+        System.out.println(dat.getClass());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 }

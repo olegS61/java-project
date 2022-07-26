@@ -1,12 +1,12 @@
 import java.util.Calendar;
 
 public class MayDate {
-    Calendar calendar = Calendar.getInstance();
-    int weekDay = calendar.get(Calendar.DAY_OF_WEEK)-1;
-    int mont = calendar.get(Calendar.MONTH);
-    int hour = calendar.get(Calendar.HOUR_OF_DAY);
-    int min = calendar.get(Calendar.MINUTE);
-    String[] wiks = {
+    private final Calendar calendar = Calendar.getInstance();
+   private final int weekDay = calendar.get(Calendar.DAY_OF_WEEK)-1;
+    private final int mont = calendar.get(Calendar.MONTH);
+    private final int hour = calendar.get(Calendar.HOUR_OF_DAY);
+    private final int min = calendar.get(Calendar.MINUTE);
+    private final String[] wiks = {
             "Неділя",
             "Понеділок",
             "Вівторок",
@@ -15,7 +15,7 @@ public class MayDate {
             "Пятниця",
             "Субота",
         };
-    String[] monts = {
+    private final String[] monts = {
             "Січень",
             "Лютий",
             "Березень",
@@ -29,9 +29,9 @@ public class MayDate {
             "Листопад",
             "Грудень",
     };
-        String strMin = min < 10 ? "0" + min : "" + min ;
-        String strHour = hour < 10 ? "0" + hour: "" + hour;
-        String message = "Cьогодні " + wiks[weekDay] + " " + strHour + ":"+strMin + "\nМісяць\t"+ monts[mont];
+       private final String strMin = min < 10 ? "0" + min : "" + min ;
+        private final String strHour = hour < 10 ? "0" + hour: "" + hour;
+        private final String message = "Cьогодні " + wiks[weekDay] + " " + strHour + ":"+strMin + "\nМісяць\t"+ monts[mont];
 
         public String getMessage(){
             return message;
